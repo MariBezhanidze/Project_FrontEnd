@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
+:root {
+  --background-color2: rgb(234, 233, 233);
+  --color-blue: rgb(3, 3, 96);
+  --background-lower: rgba(249, 249, 249, 0.674);
+}
+
+.middle-part {
+  position: relative;
+  top: 90px;
+  width: 100%;
+  min-height: 74vh;
+  background-color: var(--background-lower);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.middle-part .items {
+  position: relative;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
+.middle-part .items .empty-cart {
+  color: var(--color-blue);
+  font-size: 20px;
+  font-weight: 700;
+}
+.middle-part .items .box {
+  margin-top: 20px;
+  position: relative;
+  width: 230px;
+  height: auto;
+  display: block;
+  border: 1px solid var(--color-blue);
+  box-shadow: 0px 0px 15px 3px rgb(234, 233, 233);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.middle-part .items .box .img {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 230px;
+  display: flex;
+}
+.middle-part .items .box .img .first_img {
+  width: 228px;
+  height: 230px;
+}
+.middle-part .items .box .img .second_img {
+  display: none;
+  width: 228px;
+  height: 230px;
+}
+.middle-part .items .box .box-lower-part {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: rgb(249, 243, 236);
+}
+.middle-part .items .box .box-lower-part .description {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 6px;
+  color: var(--color-blue);
+  font-size: 15px;
+}
+.middle-part .items .box:hover {
+  animation: zoom 0.3s linear forwards;
+}
+.middle-part .items .box .cross {
+  position: absolute;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  top: 15px;
+  right: 15px;
+}
+.middle-part .items .box .cross .line1, .middle-part .items .box .cross .line2 {
+  width: 15px;
+  height: 1px;
+  background-color: var(--color-blue);
+}
+.middle-part .items .box .cross .line1 {
+  transform: translate(0, 1.6px) rotate(-135deg);
+}
+.middle-part .items .box .cross .line2 {
+  transform: rotate(135deg);
+}
+.middle-part .proceed {
+  margin-bottom: 50px;
+  width: 250px;
+  height: 70px;
+  border: 1px solid var(--color-blue);
+  background-color: rgb(224, 224, 224);
+  color: var(--color-blue);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.middle-part .proceed:hover {
+  animation: zoom 0.2s linear forwards;
+}
+.middle-part .middle-part-overlay {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-blue);
+}
+.middle-part .middle-part-overlay .specialDiv {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.middle-part .middle-part-overlay .specialDiv img {
+  width: 200px;
+}/*# sourceMappingURL=style.css.map */

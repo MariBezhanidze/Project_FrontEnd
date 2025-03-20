@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --background-color: rgb(249, 243, 236);
+  --color-blue: rgb(3, 3, 96);
+}
+
+.login-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.login-main .login-slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.login-main .login-slider-container .login-slider {
+  position: relative;
+  top: 90px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.login-main .login-slider-container .login-slider .login-slide {
+  min-width: 100%;
+  display: none;
+  justify-content: center;
+}
+.login-main .login-slider-container .login-slider .login-slide .ordinary-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.login-main .login-slider-container .login-slider .login-slide .responsive-img {
+  display: none;
+}
+.login-main .login-slider-container .login-slider .active {
+  display: flex;
+}
+.login-main .form-box {
+  position: absolute;
+  margin-top: 90px;
+  width: 220px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.login-main .form-box .upper-part {
+  position: relative;
+  width: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+}
+.login-main .form-box .upper-part .left, .login-main .form-box .upper-part .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.login-main .form-box .upper-part .left span, .login-main .form-box .upper-part .right span {
+  font-size: 13px;
+  color: var(--color-blue);
+}
+.login-main .form-box .upper-part .left button, .login-main .form-box .upper-part .right button {
+  all: unset;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-blue);
+  cursor: pointer;
+}
+.login-main .form-box .upper-part .left .active, .login-main .form-box .upper-part .right .active {
+  color: rgb(192, 0, 0);
+}
+.login-main .form-box .lower-part .signin-form, .login-main .form-box .lower-part .signup-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  align-self: center;
+  gap: 20px;
+}
+.login-main .form-box .lower-part .signin-form input, .login-main .form-box .lower-part .signup-form input {
+  width: 220px;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid rgb(3, 3, 96);
+  outline: none;
+  background: transparent;
+}
+.login-main .form-box .lower-part .signin-form input::-moz-placeholder, .login-main .form-box .lower-part .signup-form input::-moz-placeholder {
+  color: var(--color-blue);
+}
+.login-main .form-box .lower-part .signin-form input::placeholder, .login-main .form-box .lower-part .signup-form input::placeholder {
+  color: var(--color-blue);
+}
+.login-main .form-box .lower-part .signin-form input:hover, .login-main .form-box .lower-part .signup-form input:hover {
+  border: 2px solid rgb(3, 3, 96);
+  background-color: var(--background-color);
+}
+.login-main .form-box .lower-part .signin-form .form-span, .login-main .form-box .lower-part .signup-form .form-span {
+  font-size: 14px;
+  color: var(--color-blue);
+  align-self: center;
+  margin-top: 5px;
+}
+.login-main .form-box .lower-part .signin-form .form-btn, .login-main .form-box .lower-part .signin-form .form-btn2, .login-main .form-box .lower-part .signup-form .form-btn, .login-main .form-box .lower-part .signup-form .form-btn2 {
+  align-self: center;
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: var(--background-color);
+  border: 1px solid rgb(3, 3, 96);
+  color: var(--color-blue);
+  font-weight: 700;
+  cursor: pointer;
+}
+.login-main .form-box .lower-part .signin-form .form-btn:hover, .login-main .form-box .lower-part .signup-form .form-btn:hover {
+  border: 2px solid rgb(3, 3, 96);
+  background-color: rgba(249, 243, 236, 0.682);
+}
+
+.login-footer {
+  top: 0;
+}/*# sourceMappingURL=style.css.map */

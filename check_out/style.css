@@ -1,0 +1,95 @@
+:root {
+  --background-color: rgb(249, 243, 236);
+  --color-blue: rgb(3, 3, 96);
+  --background-lower: rgba(249, 249, 249, 0.674);
+}
+
+.middle-part {
+  min-height: 88vh;
+  width: 100%;
+  background-color: var(--background-lower);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.middle-part .upper {
+  margin-top: 100px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle-part .upper .left-upper .cart-part {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.middle-part .upper .left-upper .cart-part .cart-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.middle-part .upper .left-upper .cart-part .cart-content img {
+  width: 200px;
+}
+.middle-part .upper .left-upper .cart-part .cart-content .right {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 10px;
+}
+.middle-part .upper .left-upper .cart-part .cart-content .right .title, .middle-part .upper .left-upper .cart-part .cart-content .right .description, .middle-part .upper .left-upper .cart-part .cart-content .right .amount, .middle-part .upper .left-upper .cart-part .cart-content .right .price {
+  color: var(--color-blue);
+}
+.middle-part .upper .left-upper .total {
+  color: var(--color-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.middle-part .upper .right-upper .address-part {
+  color: var(--color-blue);
+  width: 50%;
+  height: auto;
+}
+.middle-part .upper .right-upper .address-part .content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+}
+.middle-part .upper .right-upper .address-part .content .country, .middle-part .upper .right-upper .address-part .content .city, .middle-part .upper .right-upper .address-part .content .address, .middle-part .upper .right-upper .address-part .content .phone, .middle-part .upper .right-upper .address-part .content .card {
+  color: var(--color-blue);
+}
+.middle-part .confirm-btn {
+  width: 200px;
+  height: 50px;
+  border: 1px solid var(--color-blue);
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.middle-part .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-lower);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  top: 0;
+}/*# sourceMappingURL=style.css.map */

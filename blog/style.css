@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration-style: none;
+}
+
+:root {
+  --background-color: rgb(249, 243, 236);
+  --background-color2: rgb(234, 233, 233);
+  --color-blue: rgb(3, 3, 96);
+}
+
+.middle-part {
+  width: 100%;
+  min-height: 88vh;
+  background-color: var(--background-color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle-part .post {
+  border: 2px solid rgb(3, 3, 96);
+  width: 650px;
+  height: 300px;
+  display: flex;
+  background-color: var(--background-color);
+}
+.middle-part .post img {
+  width: 40%;
+  height: auto;
+}
+.middle-part .post .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+.middle-part .post .content .title {
+  font-size: 18px;
+  color: var(--color-blue);
+  text-align: center;
+}
+.middle-part .post .content hr {
+  width: 100px;
+  height: 2px;
+  border-color: var(--color-blue);
+}
+.middle-part .post .content .text {
+  font-size: 14px;
+  color: var(--color-blue);
+  text-align: justify;
+}
+.middle-part .post .content .read-more-btn {
+  width: 100%;
+  height: 30px;
+  background-color: var(--background-color);
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  display: flex;
+  justify-content: end;
+  padding-right: 10px;
+  color: var(--color-blue);
+}
+
+footer {
+  top: 0;
+}/*# sourceMappingURL=style.css.map */

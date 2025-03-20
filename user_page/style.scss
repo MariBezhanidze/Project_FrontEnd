@@ -1,0 +1,80 @@
+:root {
+    --background-color: rgb(249, 243, 236);
+    --color-blue: rgb(3, 3, 96);
+    --background-lower: rgba(249, 249, 249, 0.674);
+}
+
+.user-page-main{
+    position: relative;
+    top: 90px;
+    min-height: 80vh;
+    width: 100%;
+    background-color: var(--background-lower);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    .log-out{
+        align-self: flex-end;
+        color: var(--color-blue);
+        font-weight: 700;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+    .greeting{
+        align-self: flex-start;
+        color: var(--color-blue);
+        font-weight: 700;
+        margin-left: 150px;
+        margin-top: 70px;
+    }
+    .orders{
+        height: auto;
+        margin-top: 50px;
+        column-count: 3;
+        column-width: 400px;
+        .order{
+            break-inside: avoid;
+            border: 1px solid var(--color-blue);
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px 0;
+            .order-id, .address{
+                color: var(--color-blue);
+            }
+            .product-content{
+                margin-top: 20px;
+                width: 400px;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                img{
+                    width: 180px;
+                    height: auto;
+                }
+                .product-lower{
+                    color: var(--color-blue);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            .total{
+                margin-top: 20px;
+                color: var(--color-blue);
+            }
+
+        }
+    }
+}
+
+footer{
+    position: relative;
+    top: 0;
+}
