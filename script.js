@@ -17,7 +17,6 @@ const contact = document.querySelector(".contact");
 const logIn = document.querySelector(".nav-log-in");
 const nav_basket = document.querySelector(".nav-basket");
 
-
 function scrollleft() {
   slidelist.scrollBy(-220, 0);
   slidelist.insertBefore(slidelist.lastElementChild, slidesArray[0]);
@@ -96,18 +95,10 @@ function isTokenExpired(token) {
   return exp < now;
 }
 
-function decodeJWT(token) {
-  const base64Url = token.split('.')[1];
-  const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/'); // Decode base64Url to base64
-  const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
-    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-  }).join(''));
-  return JSON.parse(jsonPayload);
-}
-
 window.onload = function () {
   if (
-    localStorage.getItem("access_token") && !isTokenExpired(localStorage.getItem("refresh_token"))
+    localStorage.getItem("access_token") &&
+    !isTokenExpired(localStorage.getItem("refresh_token"))
   ) {
     home.setAttribute("href", `http://127.0.0.1:5501/index.html?id=${id}`);
     collection.setAttribute(
@@ -191,4 +182,3 @@ function appear_slide(slides, slide) {
 }
 
 startSlider();
-
